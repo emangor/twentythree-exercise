@@ -26,14 +26,15 @@ GET - /healthcheck
 POST - /ingestuser
 
 body (required):
-```{
+```
+{
 	"user_ip": "1.2.3.4",
 	"user_agent": "Google Chrome",
 	"video_id": 1234,
 	"play_start": 0.0,
 	"play_end": 10.0
-}```
-
+}
+```
 
 ## Get Data:
 GET - /getvideo/:videoid
