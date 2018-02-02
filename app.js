@@ -32,6 +32,7 @@ if (cluster.isMaster) {
     //healthcheck routes
     router.get('/', healthcheckController.healthcheck);
     router.get('/healthcheck', healthcheckController.healthcheck);
+    router.get('/dbcheck', healthcheckController.dbcheck);
     
     //ingest users video consumption data
     router.post('/ingestuser', ingestController.ingestUserInfo);
