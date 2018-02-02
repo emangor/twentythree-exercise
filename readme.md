@@ -1,12 +1,15 @@
 # twentythree - exercise
 
 ## create tables in your Postgres DB:
+```
 CREATE TABLE video (
     video_id int primary key,
     video_length real,
     create_date timestamp not null DEFAULT now()
 );
+```
 
+```
 CREATE TABLE userinfo (
     user_ip inet not null,
     user_agent varchar(20),
@@ -15,6 +18,7 @@ CREATE TABLE userinfo (
     play_end real,
     create_date timestamp not null DEFAULT now()
 );
+```
 
 ## Set the following ENV VARs for your DB Connections:
 export DB_USER=''  DB='' DB_PASS='' DB_HOST='' DB_PORT='' DB_MAX_CLIENTS='' DB_IDLE_TIMEOUT_MS=''
